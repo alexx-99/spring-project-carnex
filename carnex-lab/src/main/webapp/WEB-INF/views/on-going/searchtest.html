@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무한 스크롤 배경 이미지</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/searchtest.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script>
+        function filterview() {
+			$('.filter').toggle();
+		}
+    </script>
+</head>
+<body>
+    <div class="bn">
+        <svg viewBox="0 0 1320 300" class="bn-svg">
+            <text x="50%" y="50%" text-anchor="middle">for sale</text>
+		</svg>
+	</div>
+    <section>
+        <h3>매물 조회</h3>
+        <a href="javascript:filterview()" class="viewbtn">검색</a>
+        <ul id="content"></ul>
+        <div class="filter">
+            <h4>조건검색창</h4>
+            <ul class="flex type">
+                <li>분류</li>
+                <li>신차</li>
+                <li>중고차</li>
+                <li>직거래</li>
+                <li>자차</li>
+            </ul>
+            <ul class="flex type">
+                <li>차종</li>
+                <li>국산차</li>
+                <li>수입차</li>
+                <li>화물차</li>
+            </ul>
+            <ul class="flex type">
+                <li>제조사</li>
+                <li>현대</li>
+                <li>기아</li>
+                <li>쉐보레</li>
+                <li>쌍용</li>
+            </ul>
+            <div class="btn">검색</div> 
+        </div>
+        <div id="loading">Loading...</div>
+    </section>
+    
+    <script src="js/searchtest.js"></script>
+</body>
+</html>

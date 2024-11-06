@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card-storage</title>
+  <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/card-storage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+  <script>
+    function getRadioText(event)  {
+      const radioId = event.target.id;
+      const query = 'label[for="'+ radioId + '"]'
+      const text = document.querySelector(query).innerText;
+      
+      document.getElementById('result').innerText = text;
+    }
+  </script>
+</head>
+<body>
+
+	<header>
+		<a href="index.html" class="hd-logo"><img src="images/top-logo.png" alt="메인로고"></a>
+		<a id="trigger" href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<ul class="top-menu">
+			<li><a href="#"><p>로그인</p><i class="bi bi-person-check-fill"></i></a></li>
+			<li><a href="#"><p>회원가입</p><i class="bi bi-person-plus-fill"></i></a></li>
+		</ul>
+
+		<nav>
+			<div id="menu" class="menu">
+				<div class="search-wrap">
+					<div class="search-box">
+						<input type="search" name="keyword" placeholder="Search..." class="inputform">
+						<button><i class="bi bi-mic-fill"></i></button>
+					</div>
+					<button class="top-btn"><i class="bi bi-search"></i></button>
+				</div>
+				
+				<ul class="menu-list">
+					<li>
+						<a href="#">About Us</a>
+						<ul class="sub-menu">
+							<li><a href="../aboutus.php">C o m p a n y</a></li>
+							<li><a href="../campaign.php">C a m p a i g n</a></li>
+							<li><a href="#">C E O</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">How To Deal</a>
+						<ul class="sub-menu">
+							<li><a href="../deal.php">R e g i s t e r &nbsp;&nbsp;C a r</a></li>
+							<li><a href="#">F o r &nbsp;&nbsp;S a l e</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">How To Pay</a>
+						<ul class="sub-menu">
+							<li><a href="../pay.php">C a r d</a></li>
+							<li><a href="#">C a s h</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Model</a>
+						<ul class="sub-menu">
+							<li><a href="../model.php">M o d e l</a></li>
+							<li><a href="#">D o m e s t i c</a></li>
+							<li><a href="#">I m p o r t e d</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+  <section>
+      <div class="card-title">
+        <h4>Card number</h4>
+        <p>카드를 선택해 주세요.</p>
+      </div>
+
+      <div class="wrapper">
+        <div class="card-wrap">
+          <label class="card card-1" for="1">
+            <input type="radio" name="card" value="1" id="1" class="radio" onclick='getRadioText(event)'>
+            <ul class="card-txt">
+              <li>이름 : 김철수</li>
+              <li>카드번호 : 4989 1237 1234 4532</li>
+              <li>카드기한 : 01/25</li>
+            </ul>
+          </label>
+
+          <label class="card card-2" for="2">
+            <input type="radio" name="card" value="2" id="2" class="radio" onclick='getRadioText(event)'>
+            <ul class="card-txt">
+              <li>이름 : 신짱구</li>
+              <li>카드번호 : 1562 1588 2858 1563</li>
+              <li>카드기한 : 06/30</li>
+            </ul>
+          </label>
+
+          <label class="card card-3" for="3">
+			<input type="radio" name="card" value="3" id="3" class="radio" onclick='getRadioText(event)'>
+            <ul class="card-txt">
+              <li>이름 : 장맹구</li>
+              <li>카드번호 : 1124 1123 2838 1234</li>
+              <li>카드기한 : 06/13</li>
+            </ul>
+          </label>
+        </div>
+
+        <div class="info">
+          <div class="info-car">
+            <div class="info-car-img"></div>
+            <h4>현대 아반떼</h4>
+            <ul class="info-car-txt flex-between">
+              <li>23/05식 (24년형)</li>
+              <li>13,130km</li>
+              <li>경기도 광주</li>
+              <li>사고유무 : 무</li>
+            </ul>
+			<p>1,000,000,000 원</p>
+          </div>
+
+		  <h4>선택한 카드</h4>
+          <div class="info-txt" id="result">
+            <p>이름 : ***</p>
+            <p>카드번호 : **** **** **** ****</p>
+            <p>카드기한 : **/**</p>
+          </div>
+          <a href="#" class="btn">해당카드로 결제</a>
+        </div>
+
+      </div>
+  </section>
+
+  <footer>
+		<div class="ft-wrap">
+			<a href="index.html"><img src="images/bottom-logo.png" alt="하단로고"></a>
+			
+			<div class="ft-txt">
+				<p>(주)카넥스</p>
+				<p>Addr : 197road, 12, WorldcupSagang-ro, Seo-gu, Gwangju, Korea | 사업자등록번호 : 123-45-67890 | 통신판매업신고번호 : 2020-광주북구-0408</p>
+			</div>
+			
+			<ul class="sns">
+				<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+				<li><a href="#"><i class="bi bi-twitter"></i></a></li>
+				<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+
+</body>
+</html>

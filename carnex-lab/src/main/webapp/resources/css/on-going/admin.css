@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {display: flex;}
+/* h3 {margin-top: 60px;} */
+li {margin-top: 20px;}
+/* a {color: #333;} */
+
+header {width:200px; height:100vh; background:#333; z-index: 2;}
+nav {margin-left: 20px;}
+nav h3 {margin-top: 60px;}
+#nav-01 li:first-child {margin-top: 40px;}
+.tab-item {cursor: pointer;}
+
+section {
+    width: calc(100% - 200px); height: 100vh; 
+    background: #eaeaea;
+}
+.tab-content {display: none; height: 100vh;}
+.tab-content.on {display: block; height: 100vh;}
+.sec-01 {
+    display: flex; justify-content: space-between; align-items: center; 
+    width: 100%; height: 60px; background: #f6f6f6;
+    box-shadow: 0px 0px 10px 0px rgba(9, 9, 9, 0.15)
+}
+.sec-01 h3 {margin-left: 20px; color: #333;}
+.sec-btn {display: flex;}
+.sec-btn a {
+    margin-right: 20px;
+    width: 200px; height: 50px; background: #ff4b51;
+    color: #f6f6f6; text-align: center; line-height: 50px;
+}
+.sec-02 {
+    height:calc(100% - 60px); padding-top: 25%;
+    background: #e2e2e2; color: #333;
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+section h4, section a, section p {font-family:"pretendard"; color: #333;}
+
+h4 i {padding-right: 10px;}
+
+section {
+  width: 1400px; height: 802px; background: #f6f6f6; margin-top: 200px;
+  /* height: 802px 인 이유는 border가 2px이라 높이값에 2px을 추가했어염 */
+}
+.pro {
+  position: relative;
+  padding-top: 20px; height: 300px; text-align: center;
+}
+.img {
+  margin: 24px auto 0; width: 120px; height: 120px; border-radius: 50%; 
+  background: url('../images/index/fp-3.png') no-repeat center center;
+  background-size: cover;
+}
+.pro a {
+  position: absolute; left: 720px; top: 130px; padding-left: 1px;
+  width: 40px; height: 40px; border-radius: 50%;
+  font-size: 27px; color: #555; text-align: center; line-height: 42px;
+  background: #f6f6f6;
+  box-shadow: 0px 0px 10px 0px rgba(9, 9, 9, 0.5)
+}
+.pro h4 {padding-top: 20px;}
+.pro > p {padding-top: 10px;}
+
+.info {
+  display: flex;
+  width: 1400px; 
+  border-top: 2px solid #d9d9d9;
+}
+.info-1 {width: 200px; height: 500px; border-right: 2px solid #d9d9d9;}
+.tab {margin-top: 90px; text-align: center;}
+.tab li a {font-size: 24px; padding-top: 24px;}
+.tab li a:hover {color: #374BE6;}
+
+.info-2 {width: 1200px;}
+.tab-content {display: none;}
+.tab-content.on {display: block;}
+
+.tab-top-flex {
+  display: flex; justify-content: space-between; align-items: center; padding: 20px 100px;
+  height: 80px;
+  border-bottom: 2px solid #d9d9d9;
+}
+.tab-top {
+  padding: 20px 100px;
+  height: 80px;
+  border-bottom: 2px solid #d9d9d9;
+}
+.tab-btn a:first-child {margin-right: 10px;}
+.tab-con {
+  width: 1200px;
+  height: 400px;
+}
+.tab1-con {
+  width: 1200px;
+  height: 400px;
+  padding: 80px 200px;
+}
+.tab1-con li {font-size: 24px; margin-bottom: 20px;}
+
+.tab2-con ul li {
+  display: flex; justify-content: space-between; align-items: center; margin: 0 auto;
+  border-bottom: 2px solid #d9d9d9;
+  width: 1000px;
+  height: 120px;
+}
+.tab2-img {
+  width: 80px;
+  height: 80px;
+  background: url('../images/model/van-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.tab3-img {
+  width: 120px;
+  height: 80px;
+  background: url('../images/card-storage/card-01.jpg') no-repeat center center;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.tab4 ul li {height: 60px;}
+.tab4-txt {display: flex; justify-content: space-between; text-align: center;}
+.tab4-txt p:first-child {width: 40px;}
+.tab4-txt p:nth-child(2) {width: 560px;}
+.tab4-txt p:last-child {width: 100px;}
+
+.btn {  
+  display: inline-flex; justify-content: center; align-items: center;
+  height: 44px; padding: 20px;
+  text-align: center; letter-spacing: 1px; text-transform: uppercase;
+  border: none; border-radius: 4px;
+  box-shadow: 0 8px 24px 0 rgba(255,235,167,0.1);
+  transition: all 200ms linear;
+}
+.btn-chack {
+  width: 190px; height: 48px; margin: 10px 0 0 10px;
+  color: #181600; background: #ffeba7;
+  cursor: pointer;
+}
+.btn-carnex {color: #374BE6; background: #68ade2;}
+.btn-kakao {color: #181600; background: #fee500;}
+.btn-naver {color: #f6f6f6; background: #2daf00;}
+
+.btn:hover{  
+  background: #68ade2;
+  color: #f6f6f6;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,0.1);
+}
+.btn-kakao:hover {
+  background: #181600;
+  color: #fee500;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,0.1);
+}
+.btn-naver:hover {
+  background: #f6f6f6;
+  color: #2daf00;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,0.1);
+}
